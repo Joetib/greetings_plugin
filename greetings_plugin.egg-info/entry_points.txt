@@ -1,0 +1,5 @@
+[cms.djangoapp]
+openedx_plugin_cms = greetings.apps:CustomPluginCMSConfig
+
+[lms.djangoapp]
+openedx_plugin = greetings.apps:GreetingsConfig

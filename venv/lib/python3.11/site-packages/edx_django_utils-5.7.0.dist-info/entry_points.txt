@@ -1,0 +1,2 @@
+[console_scripts]
+log-sensitive = edx_django_utils.logging.internal.log_sensitive:cli
