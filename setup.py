@@ -49,7 +49,7 @@ def is_requirement(line) -> bool:
 
 
 README = open(os.path.join(os.path.dirname(__file__), "README.md")).read()
-ABOUT = """GREETINGS
+ABOUT = """GREETINGS_PLUGIN
 An extension built for ibleducation interview
 """
 print("Found packages: {packages}".format(packages=find_packages()))

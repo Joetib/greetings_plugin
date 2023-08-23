@@ -4,3 +4,6 @@ env
 *.egg-info
 *.egg
 __pycache__
+*.sqlite3
+./plugin
+./manage.py
