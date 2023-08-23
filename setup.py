@@ -94,7 +94,7 @@ setup(
             
         ],
         "cms.djangoapp": [
-            "openedx_plugin_cms = greetings_plugin.apps:CustomPluginCMSConfig",
+            "openedx_plugin_cms = greetings_plugin.apps:GreetingsConfig",
         ],
     },
     extras_require={
