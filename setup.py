@@ -56,7 +56,7 @@ print("Found packages: {packages}".format(packages=find_packages()))
 print("requirements found: {requirements}".format(requirements=load_requirements("requirements.txt")))
 
 setup(
-    name="greetings-plugin",
+    name="greetings_plugin",
     version="0.1.0",
     packages=find_packages(),
     package_data={"": ["*.html"]},  # include any Mako templates found in this repo.
