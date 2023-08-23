@@ -12,13 +12,13 @@ from rest_framework.request import HttpRequest
 from auth_backends.backends import EdXOAuth2
 import requests
 import logging
-logger = logging.getLogger()
+logger = logging.getLogger(__name__)
 class GreetingsViewSet(ListCreateAPIView,RetrieveAPIView):
     model = Greeting
     queryset = Greeting.objects.all()
     serializer_class = GreetingSerializer
     permission_classes = [IsAuthenticated]
-    authentication_classes  = [
+    authentication_backends  = [
         EdXOAuth2
     ]
 

@@ -1,10 +1,12 @@
 from django.apps import AppConfig
-from edx_django_utils.plugins import PluginSettings, PluginURLs, plugin_apps
-from openedx.core.djangoapps.plugins.constants import ProjectType
+import logging
+from edx_django_utils.plugins import PluginSettings, PluginURLs
+# rom opefnedx.core.djangoapps.plugins.constants import ProjectType
 # from openedx.core.djangoapps.plugins.constants import (
 #     ProjectType,
     
 # )
+log = logging.getLogger(__name__)
 
 class GreetingsConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
@@ -32,3 +34,6 @@ class GreetingsConfig(AppConfig):
         # },
         
     }
+
+    def ready(self):
+        log.info("{label} is ready.".format(label=self.label))
